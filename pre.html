@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        <h1>
+            <strong>T</strong><sub>e</sub><u>x</u><sup>t</sup>
+            <br>
+            <strong>F</strong>o<small>r</small><sup>m</sup><del>at</del><sup>t</sup><u>in</u>g
+    </body>
+    <script>
+        numbers=[1,2,3,4,5]
+        numbers.forEach(element => {
+        console.log(element*2);
+        
+            
+        });
+        const fetchData=()=>
+        {
+            return new Promise((resolve,reject)=>
+            {
+                const success=false;
+                setTimeout(()=>
+            {
+                if(success)
+            {
+                resolve("Data fetched Successfully")
+            }
+            else
+            {
+                console.log('failed to FETCH DATA');
+                
+            }
+            },120)
+            },)}
+            const getdata=async ()=>{
+            try{
+                const result=await fetchData();
+                console.log(result);
+                
+            }
+            catch(error)
+            {
+                console.error('error')
+            }
+        };
+         getdata();
+        </script>
+</html>
